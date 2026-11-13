@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- ==============================================
+       SEO PRIMARY META TAGS (Ranked for Google & Brave)
+       ============================================== -->
+  <title>AlphaXER Launcher | Ultra-Fast Minecraft 1.21.1 Launcher (Fabric & NeoForge)</title>
+  <meta name="title" content="AlphaXER Launcher | Ultra-Fast Minecraft 1.21.1 Launcher (Fabric & NeoForge)">
+  <meta name="description" content="AlphaXER Launcher is the ultimate production-ready, ultra-fast, bloat-free custom Minecraft 1.21.1 launcher. Features dual Fabric & NeoForge isolated loaders, 1-click Modrinth & CurseForge installs with live download %, .mrpack modpack support, and smart RAM optimization. Made by mayankmandrai.">
+  <meta name="keywords" content="AlphaXER Launcher, AlphaXER Minecraft Launcher, Minecraft 1.21.1 launcher, Fabric launcher 1.21.1, NeoForge launcher 1.21.1, best minecraft launcher, fast minecraft launcher, bloat-free minecraft launcher, modrinth launcher, curseforge launcher, mrpack installer, mayankmandrai">
+  <meta name="author" content="mayankmandrai">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://alphaxer-launcher.vercel.app/">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/assets/logo.png">
+
+  <!-- ==============================================
+       OPEN GRAPH / FACEBOOK / DISCORD META TAGS
+       ============================================== -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alphaxer-launcher.vercel.app/">
+  <meta property="og:site_name" content="AlphaXER Launcher">
+  <meta property="og:title" content="AlphaXER Launcher - Ultra-Fast Minecraft 1.21.1 Launcher">
+  <meta property="og:description" content="Experience high FPS, zero bloat, and pure Minecraft 1.21.1 gaming with dual Fabric and NeoForge environments. 1-click mod installer with live download percentage.">
+  <meta property="og:image" content="https://alphaxer-launcher.vercel.app/assets/og-image.png">
+
+  <!-- ==============================================
+       TWITTER META TAGS
+       ============================================== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://alphaxer-launcher.vercel.app/">
+  <meta name="twitter:title" content="AlphaXER Launcher - Ultra-Fast Minecraft 1.21.1 Launcher">
+  <meta name="twitter:description" content="Ultra-fast custom Minecraft 1.21.1 Launcher with Fabric and NeoForge dual loaders. Made by mayankmandrai.">
+  <meta name="twitter:image" content="https://alphaxer-launcher.vercel.app/assets/og-image.png">
+
+  <!-- ==============================================
+       SCHEMA.ORG STRUCTURED DATA (Google & Brave Rich Snippets)
+       ============================================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "AlphaXER Launcher",
+        "operatingSystem": "Windows 10, Windows 11",
+        "applicationCategory": "GameApplication",
+        "softwareVersion": "1.0.0",
+        "offers": {
+          "@type": "Offer",
+          "price": "0.00",
+          "priceCurrency": "USD"
+        },
+        "description": "Ultra-fast custom Minecraft 1.21.1 launcher with dual Fabric and NeoForge environments, 1-click Modrinth & CurseForge mod installers, and smart RAM optimization.",
+        "author": {
+          "@type": "Person",
+          "name": "mayankmandrai",
+          "email": "mayankmandrai9@gmail.com"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.95",
+          "ratingCount": "128"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "name": "AlphaXER Launcher",
+        "url": "https://alphaxer-launcher.vercel.app/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://alphaxer-launcher.vercel.app/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is AlphaXER Launcher?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AlphaXER Launcher is a custom, bloat-free Minecraft 1.21.1 desktop client designed for maximum FPS and zero input latency. It includes isolated Fabric and NeoForge environments, integrated Modrinth and CurseForge search, .mrpack modpack installer, and smart RAM calculation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does AlphaXER support both Fabric and NeoForge for 1.21.1?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! AlphaXER features dual loader isolation. Fabric 1.21.1 and genuine NeoForge 21.1.65 each have separate config, saves, and mods directories so they never conflict."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is AlphaXER Launcher completely free and safe?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AlphaXER is 100% free, safe, and open-source under the MIT license. It does not contain telemetry, ads, or background cryptominers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Who developed AlphaXER Launcher?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AlphaXER Launcher is developed and maintained by mayankmandrai (business contact: mayankmandrai9@gmail.com)."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+  <!-- Particle Background Canvas -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- ==============================================
+       TOP NAVIGATION BAR
+       ============================================== -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="#" class="brand">
+          <div class="brand-icon">
+            <img src="/assets/logo.png" alt="AlphaXER Logo">
+          </div>
+          <div class="brand-text">
+            <span class="brand-title">AlphaXER</span>
+            <span class="brand-badge">Launcher 1.21.1</span>
+          </div>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#dual-loaders">Dual Loaders</a></li>
+          <li><a href="#mods">Mods & Packs</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#" class="open-license-btn">License</a></li>
+          <li><a href="#" class="open-contact-btn">Contact</a></li>
+        </ul>
+
+        <div class="nav-cta">
+          <a href="#download" class="btn-primary">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+            <span>Download</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==============================================
+       HERO SECTION
+       ============================================== -->
+  <section class="hero">
+    <div class="container">
+      
+      <div class="hero-pill">
+        <span class="hero-pill-dot"></span>
+        <span>Minecraft 1.21.1 Tricky Trials &bull; Production v1.0.0</span>
+      </div>
+
+      <h1 class="hero-title">
+        Ultra-Fast, Bloat-Free<br>
+        <span class="gradient-text">Minecraft 1.21.1 Launcher</span>
+      </h1>
+
+      <p class="hero-description">
+        Experience blazing launch speeds, zero input lag, and isolated <strong>Fabric</strong> & <strong>NeoForge</strong> loaders. Built-in Modrinth & CurseForge search with live download progress percentage.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#download" class="btn-primary" style="padding: 16px 36px; font-size: 1.05rem;">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+          <span>Download AlphaXER (Windows)</span>
+        </a>
+        <a href="#features" class="btn-secondary" style="padding: 16px 28px; font-size: 1.05rem;">
+          <span>Explore Features</span>
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>
+        </a>
+      </div>
+
+      <!-- Quick Stats -->
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Free & Open Source</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">0ms</div>
+          <div class="stat-label">Extra Background Lag</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">Java 21</div>
+          <div class="stat-label">LTS Runtime Ready</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">Dual</div>
+          <div class="stat-label">Fabric + NeoForge</div>
+        </div>
+      </div>
+
+      <!-- App Showcase Window -->
+      <div class="showcase">
+        <div class="showcase-window">
+          <div class="window-topbar">
+            <div class="window-dots">
+              <span class="window-dot dot-red"></span>
+              <span class="window-dot dot-yellow"></span>
+              <span class="window-dot dot-green"></span>
+            </div>
+            <span class="window-title">AlphaXER Launcher - Play Tab</span>
+            <span style="font-size: 0.75rem; color: #64748b; font-family: var(--font-mono);">v1.21.1</span>
+          </div>
+
+          <div class="window-body">
+            <!-- Simulated Sidebar -->
+            <div class="mock-sidebar">
+              <div class="mock-nav-item mock-nav-active">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                <span>Play Game</span>
+              </div>
+              <div class="mock-nav-item">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+                <span>Installed Mods</span>
+              </div>
+              <div class="mock-nav-item">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+                <span>Modpacks (.mrpack)</span>
+              </div>
+              <div class="mock-nav-item">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                <span>Modrinth</span>
+              </div>
+              <div class="mock-nav-item">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                <span>CurseForge</span>
+              </div>
+            </div>
+
+            <!-- Simulated Main Content -->
+            <div class="mock-content">
+              <div class="mock-hero-banner">
+                <span class="feature-badge" id="showcase-loader-badge">FABRIC 1.21.1</span>
+                <h3 style="font-size: 1.4rem; font-weight: 900; color: #fff; margin: 8px 0 4px;">Minecraft 1.21.1 Tricky Trials</h3>
+                <p id="showcase-loader-desc" style="font-size: 0.85rem; color: #94a3b8;">Ultra-lightweight modular engine with Sodium, Iris Shaders, and zero input latency.</p>
+              </div>
+
+              <!-- Interactive Loaders Toggle -->
+              <div class="mock-loaders">
+                <div class="mock-loader-card active" data-loader="fabric" style="cursor: pointer;">
+                  <div style="width: 36px; height: 36px; border-radius: 8px; background: #2563eb; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 900;">F</div>
+                  <div>
+                    <div style="font-weight: 800; color: #fff; font-size: 0.95rem;">Fabric Loader</div>
+                    <div style="font-size: 0.75rem; color: #94a3b8;">High FPS, Sodium & Iris</div>
+                  </div>
+                </div>
+
+                <div class="mock-loader-card" data-loader="neoforge" style="cursor: pointer;">
+                  <div style="width: 36px; height: 36px; border-radius: 8px; background: #ea580c; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 900;">N</div>
+                  <div>
+                    <div style="font-weight: 800; color: #fff; font-size: 0.95rem;">NeoForge 21.1.65</div>
+                    <div style="font-size: 0.75rem; color: #94a3b8;">Native Mods menu & Create</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Launch Bar -->
+              <div style="background: rgba(15, 23, 42, 0.9); border: 1px solid rgba(59, 130, 246, 0.3); border-radius: 12px; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between;">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                  <span style="font-size: 0.8rem; color: #94a3b8;">Username:</span>
+                  <span style="font-weight: 700; color: #60a5fa; font-family: var(--font-mono);">AlphaPlayer</span>
+                </div>
+                <div class="btn-primary" style="padding: 10px 24px; font-size: 0.85rem; pointer-events: none;">
+                  <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                  <span>LAUNCH GAME</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==============================================
+       FEATURES SECTION
+       ============================================== -->
+  <section class="features-section" id="features">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-pill">Engineered For Performance</span>
+        <h2 class="section-title">Everything A Minecraft Player Needs</h2>
+        <p class="section-subtitle">AlphaXER eliminates launcher bloatware and background telemetry so 100% of your CPU and RAM go directly to Minecraft.</p>
+      </div>
+
+      <div class="features-grid">
+        
+        <!-- Feature 1 -->
+        <div class="glass-card feature-card">
+          <div class="feature-icon-wrapper">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+          </div>
+          <span class="feature-badge">ISOLATED ENGINES</span>
+          <h3 class="feature-title">Dual Fabric & NeoForge Loaders</h3>
+          <p class="feature-description">
+            Run Fabric 1.21.1 and genuine NeoForge 21.1.65 simultaneously with zero mod conflicts. Each loader has its own isolated mods, config, and profile directory.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="glass-card feature-card">
+          <div class="feature-icon-wrapper">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+          </div>
+          <span class="feature-badge">LIVE PERCENTAGE %</span>
+          <h3 class="feature-title">1-Click Modrinth & CurseForge</h3>
+          <p class="feature-description">
+            Browse and install thousands of Minecraft 1.21.1 mods instantly. Real-time streaming percentage progress (1%, 10%, 50%, 100%) and downloaded megabytes.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="glass-card feature-card">
+          <div class="feature-icon-wrapper">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <span class="feature-badge">.MRPACK READY</span>
+          <h3 class="feature-title">Universal Modpack Installer</h3>
+          <p class="feature-description">
+            Drag and drop any Modrinth <code style="color: #60a5fa;">.mrpack</code> file or install top packs like Fabulously Optimized with automatic extraction of overrides and bundled mods.
+          </p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="glass-card feature-card">
+          <div class="feature-icon-wrapper">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
+          </div>
+          <span class="feature-badge">SAFE DELETION</span>
+          <h3 class="feature-title">Smart 'delete-mod' Cleanup</h3>
+          <p class="feature-description">
+            Deletes the mod .jar and cleans up its matching configuration file while strictly keeping your <code style="color: #34d399;">saves/</code> folder untouched to prevent world corruption.
+          </p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="glass-card feature-card">
+          <div class="feature-icon-wrapper">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></svg>
+          </div>
+          <span class="feature-badge">HARDWARE DETECTION</span>
+          <h3 class="feature-title">Auto-Detect RAM & Optimization</h3>
+          <p class="feature-description">
+            Detects your total PC system RAM via native Node.js OS modules and automatically calculates the optimal memory allocation with a smooth slider override.
+          </p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="glass-card feature-card">
+          <div class="feature-icon-wrapper">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <span class="feature-badge">CUSTOM SKINS</span>
+          <h3 class="feature-title">Pixel Skin Manager & Preview</h3>
+          <p class="feature-description">
+            Upload custom 64x64 or 64x32 PNG skins with instant HTML5 canvas pixel rendering and 3D zoomed face preview.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==============================================
+       DOWNLOAD SECTION
+       ============================================== -->
+  <section class="download-section" id="download">
+    <div class="container">
+      
+      <div class="download-box">
+        <span class="section-pill">Official Production Releases</span>
+        <h2 class="section-title">Get AlphaXER Launcher For Windows</h2>
+        <p class="section-subtitle">
+          Built for Windows 10 and Windows 11 (64-bit). No bloatware, no ads, no sign-ups required.
+        </p>
+
+        <div class="download-options">
+          
+          <!-- Option 1: Official NSIS Installer (Recommended) -->
+          <div class="download-card download-card-featured">
+            <div>
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+                <span class="creator-tag">RECOMMENDED</span>
+                <span style="font-size: 0.75rem; color: #34d399; font-weight: 700; font-family: var(--font-mono);">v1.0.0</span>
+              </div>
+              <h3 style="font-size: 1.3rem; font-weight: 900; color: #fff;">Windows Setup (.exe)</h3>
+              <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 8px; line-height: 1.5;">
+                Full NSIS Installer with desktop and start menu shortcuts, automatic updates, and portable extraction support.
+              </p>
+            </div>
+            
+            <a href="/downloads/AlphaXER-Launcher-Setup-1.0.0.exe" download="AlphaXER-Launcher-Setup-1.0.0.exe" class="btn-primary" style="width: 100%;">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+              <span>Download Setup Installer (.exe)</span>
+            </a>
+          </div>
+
+          <!-- Option 2: Portable Executable -->
+          <div class="download-card">
+            <div>
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+                <span style="font-size: 0.75rem; color: #94a3b8; font-family: var(--font-mono); font-weight: 700;">STANDALONE</span>
+                <span style="font-size: 0.75rem; color: #60a5fa; font-weight: 700; font-family: var(--font-mono);">v1.0.0</span>
+              </div>
+              <h3 style="font-size: 1.3rem; font-weight: 900; color: #fff;">Windows Portable (.exe)</h3>
+              <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 8px; line-height: 1.5;">
+                Zero installation required. Run directly from your USB stick or Downloads folder anywhere.
+              </p>
+            </div>
+            
+            <a href="/downloads/AlphaXER-Launcher-Portable-1.0.0.exe" download="AlphaXER-Launcher-Portable-1.0.0.exe" class="btn-secondary" style="width: 100%;">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+              <span>Download Portable Edition (.exe)</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Requirements footer -->
+        <div style="margin-top: 36px; font-size: 0.8rem; color: #64748b;">
+          <span>System Requirements: Windows 10/11 64-bit &bull; 4GB+ RAM &bull; Java 21 LTS (auto-detected or installed via 1-click inside launcher)</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==============================================
+       FAQ SECTION
+       ============================================== -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-pill">Frequently Asked Questions</span>
+        <h2 class="section-title">Everything You Need To Know</h2>
+        <p class="section-subtitle">Common questions about AlphaXER Launcher, mods installation, and safety.</p>
+      </div>
+
+      <div class="faq-list">
+        
+        <div class="faq-item open">
+          <button class="faq-question">
+            <span>What is AlphaXER Launcher?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            AlphaXER Launcher is a custom, high-performance Minecraft 1.21.1 desktop client. It solves typical launcher lag and memory bloat by running isolated Fabric and NeoForge environments, providing 1-click mod downloads from Modrinth & CurseForge, and ensuring world saves are protected during mod removal.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Does it work with Create Mod and Sodium?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Yes! For Fabric 1.21.1, you can run Sodium, Iris Shaders, and Lithium for maximum FPS. For NeoForge 1.21.1, it includes the genuine NeoForge 21.1.65 runtime with native title screen Mods button and full support for the Create mod.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do I need to install Java 21 separately?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            AlphaXER automatically searches your system for Java 21 (Adoptium, Microsoft OpenJDK, BellSoft, Zulu). If missing, it provides a 1-click button inside the launcher that opens the official Microsoft OpenJDK 21 installer.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How do I contact the creator for business inquiries?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            You can reach the creator, mayankmandrai, directly via official business email: <a href="mailto:mayankmandrai9@gmail.com" style="color: #60a5fa; font-weight: 700;">mayankmandrai9@gmail.com</a>.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==============================================
+       FOOTER
+       ============================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div>
+          <div class="brand">
+            <div class="brand-icon">
+              <img src="/assets/logo.png" alt="AlphaXER Logo">
+            </div>
+            <div class="brand-text">
+              <span class="brand-title">AlphaXER</span>
+              <span class="brand-badge">Launcher 1.21.1</span>
+            </div>
+          </div>
+          <p class="footer-brand-desc">
+            The next-generation, high-performance custom Minecraft Launcher. Engineered with Electron, React, Vite, and minecraft-launcher-core.
+          </p>
+          <div style="margin-top: 16px;">
+            <span class="creator-tag">Made by mayankmandrai</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Loaders</h4>
+          <ul class="footer-col-links">
+            <li><a href="#dual-loaders">Fabric 1.21.1</a></li>
+            <li><a href="#dual-loaders">NeoForge 21.1.65</a></li>
+            <li><a href="#mods">Modrinth API</a></li>
+            <li><a href="#mods">CurseForge API</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Downloads</h4>
+          <ul class="footer-col-links">
+            <li><a href="#download">Windows Setup (.exe)</a></li>
+            <li><a href="#download">Portable (.exe)</a></li>
+            <li><a href="#features">Changelog</a></li>
+            <li><a href="#" class="open-license-btn">Source Code</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Legal & Contact</h4>
+          <ul class="footer-col-links">
+            <li><a href="#" class="open-license-btn">MIT License</a></li>
+            <li><a href="#" class="open-license-btn">Copyright Notice</a></li>
+            <li><a href="#" class="open-contact-btn">Business Email</a></li>
+            <li><a href="mailto:mayankmandrai9@gmail.com">mayankmandrai9@gmail.com</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 AlphaXER Launcher. Created by <strong>mayankmandrai</strong>. All rights reserved.
+        </div>
+        <div>
+          Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==============================================
+       LICENSE & COPYRIGHT MODAL
+       ============================================== -->
+  <div class="modal-overlay" id="license-modal">
+    <div class="modal-content">
+      <button class="modal-close" id="close-license-btn">&times;</button>
+      <h3 style="font-size: 1.4rem; font-weight: 900; color: #fff; margin-bottom: 16px;">License & Copyright</h3>
+      
+      <div style="background: rgba(15, 23, 42, 0.8); border: 1px solid rgba(59, 130, 246, 0.25); border-radius: 12px; padding: 18px; font-family: var(--font-mono); font-size: 0.8rem; line-height: 1.6; color: #94a3b8; max-height: 300px; overflow-y: auto;">
+        <p><strong>MIT License</strong></p>
+        <p style="margin-top: 8px;">Copyright (c) 2026 mayankmandrai (mayankmandrai9@gmail.com)<br>AlphaXER Launcher - Ultra-Fast Custom Minecraft Launcher</p>
+        <p style="margin-top: 12px;">Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software...</p>
+        <p style="margin-top: 12px;">THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.</p>
+      </div>
+
+      <div style="margin-top: 20px; font-size: 0.8rem; color: #64748b; line-height: 1.5;">
+        <strong>Disclaimer:</strong> AlphaXER Launcher is an independent open-source client. "Minecraft" is a registered trademark of Mojang Synergies AB. This launcher is not affiliated with or endorsed by Mojang or Microsoft.
+      </div>
+    </div>
+  </div>
+
+  <!-- ==============================================
+       BUSINESS CONTACT MODAL
+       ============================================== -->
+  <div class="modal-overlay" id="contact-modal">
+    <div class="modal-content">
+      <button class="modal-close" id="close-contact-btn">&times;</button>
+      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+        <div style="width: 44px; height: 44px; border-radius: 12px; background: rgba(59, 130, 246, 0.2); border: 1px solid rgba(59, 130, 246, 0.4); display: flex; align-items: center; justify-content: center; color: #60a5fa;">
+          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        </div>
+        <div>
+          <h3 style="font-size: 1.3rem; font-weight: 900; color: #fff;">Business & Creator Contact</h3>
+          <span class="creator-tag" style="margin-top: 4px;">Created by mayankmandrai</span>
+        </div>
+      </div>
+
+      <p style="font-size: 0.9rem; color: #94a3b8; line-height: 1.6; margin-bottom: 20px;">
+        For commercial collaborations, feedback, partnerships, or launcher sponsorships, please contact the official creator email:
+      </p>
+
+      <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(59, 130, 246, 0.3); border-radius: 14px; padding: 18px; display: flex; align-items: center; justify-content: space-between; gap: 12px;">
+        <div style="font-family: var(--font-mono); font-size: 0.95rem; font-weight: 700; color: #60a5fa;">
+          mayankmandrai9@gmail.com
+        </div>
+        <button onclick="copyEmail(this)" class="btn-primary" style="padding: 8px 16px; font-size: 0.8rem;">
+          Copy Email
+        </button>
+      </div>
+
+      <div style="margin-top: 24px; display: flex; justify-content: flex-end;">
+        <a href="mailto:mayankmandrai9@gmail.com" class="btn-primary" style="width: 100%;">
+          <span>Open Email Client</span>
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
